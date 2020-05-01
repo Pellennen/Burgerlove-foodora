@@ -5,6 +5,13 @@ body {
   width: 100%;
 }
 
+
+/*
+
+----------HEADER-----------
+
+*/
+
 .burg-header {
     background: #2d2e2f;
     color: #fff;
@@ -16,3 +23,25 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+.header-wrap {
+
+}
+
+.foodora-logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.burgerlove-logo {
+  height: 100px;
+  position: relative;
+  top: 58px;
+}
+
+
+/*
+
+----------------END HEADER-------------------
+
+*/
