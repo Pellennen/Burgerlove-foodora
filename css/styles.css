@@ -1,4 +1,15 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap');
+
+h1,
+h2 {
+  font-family: 'Bebas Neue';
+  color: #fff
+}
+
+p {
+  font-family: 'Lato';
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -69,7 +80,7 @@ body {
 .custom-modal {
   max-width: 850px;
   background-color: #72151d;
-  outline: 1px solid white;
+  outline: 2px solid white;
   outline-offset: -12px;
 }
 
@@ -80,6 +91,19 @@ body {
   border-radius: 50%;
 }
 
+.custom-modal-head {
+  padding-top: 29px;
+}
+
+.line {
+  height: 2px;
+  color: #fff;
+  padding-top: 2px;
+}
+
+.custom-row {
+  margin: 2em;
+}
 /*
 -----END CONTENT-----
 */
