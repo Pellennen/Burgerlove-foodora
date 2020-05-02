@@ -50,3 +50,36 @@ body {
 ----------------END HEADER-------------------
 
 */
+
+/*
+---- CONTENT -----
+*/
+.content-holder {
+  min-height: 100vh;
+}
+.bg-cover {
+  background: url("../img/burgerlove-background.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.custom-modal {
+  max-width: 850px;
+  background-color: #72151d;
+  outline: 1px solid white;
+  outline-offset: -12px;
+}
+
+.burger-pic {
+  background-color: gray;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/*
+-----END CONTENT-----
+*/
