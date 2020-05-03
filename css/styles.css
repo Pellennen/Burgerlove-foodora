@@ -12,6 +12,11 @@ h1 {
 h2 {
   font-size: 1.5em;
 }
+
+li {
+  font-family: "Bebas Neue";
+  color: #72151d;
+}
 h1,
 h2,
 a,
@@ -144,11 +149,11 @@ body {
 }
 
 .login-register a {
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
 .login-register a:hover {
-color:#b03f49;
+  color: #b03f49;
 }
 
 .times-row {
@@ -170,40 +175,106 @@ color:#b03f49;
   top: 15px;
 }
 
-.times-color {
-  color: ;
+/*
+
+----Mobile Header----
+
+*/
+
+.burger-menu {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.burger-menu i {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  color: #252525;
+  font: bold 14px/0.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #252525;
+  transition: all 0.2s ease-out;
+}
+.burger-menu i::before,
+.burger-menu i::after {
+  content: "";
+  width: 18px;
+  height: 3px;
+  background: #252525;
+  position: absolute;
+  left: 0;
+  transition: all 0.2s ease-out;
+}
+.burger-menu i::before {
+  top: -7px;
+}
+.burger-menu i::after {
+  bottom: -7px;
+}
+.burger-menu:hover i::after {
+  width: 30%;
+}
+.burger-menu.active i {
+  background: #fff;
 }
 
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
+.burger-menu {
+  position: sticky;
+  left: 2em;
+  top: 1em;
+  display: none;
 }
 
-.nav li {
-	display: inline;
-	color: white;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #72151d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+/*
+
+----Mobile Header END----
+
+*/
 /*
 
 ----------------END HEADER-------------------
 
-*/
+
 
 /*
 ---- CONTENT -----
@@ -289,6 +360,20 @@ color:#b03f49;
 /*
 ------ MEDIA QUERIES-----
 */
+
+@media only screen and (max-width: 1000px) {
+  .burg-header {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .burgerlove-logo {
+    left: 2.5em;
+  }
+}
 
 @media only screen and (max-width: 575px) {
   .w-50 {
