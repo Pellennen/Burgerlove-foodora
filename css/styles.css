@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap");
-
 /*
 
 ------- TEXT STYLES ----------
@@ -15,9 +14,17 @@ h2 {
 }
 h1,
 h2,
+a,
 .burger-price {
   font-family: "Bebas Neue";
   color: #fff;
+  text-decoration: none;
+}
+
+.foodora-logo-row p,
+.times-color {
+  color: #a0a6b0;
+  font-size: 12px;
 }
 
 .burger-description p {
@@ -87,8 +94,111 @@ body {
   height: 100px;
   position: relative;
   top: 14px;
+  left: 8.5em;
 }
 
+.custom-select {
+  width: 90%;
+  height: 30px;
+  background: #fff;
+  color: #72151d;
+  font-size: 14px;
+}
+
+.select-arrow {
+  position: absolute;
+  left: 42px;
+  color: #72151d;
+  font-size: 14px;
+  top: 11px;
+}
+
+.select-box {
+  outline: 2px solid #fff;
+  height: 32px;
+  width: 48px;
+  outline-offset: -5px;
+  background-color: #72151d;
+  position: absolute;
+  right: 5px;
+  top: -1px;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.select-box:hover {
+  background-color: #b03f49;
+}
+
+.custom-select-row {
+  padding-top: 2em;
+}
+
+.custom-select-col {
+  padding-bottom: 1em;
+}
+
+.login-register {
+  margin-left: 0;
+  max-width: 132px;
+}
+
+.login-register a {
+  transition: color .4s;
+}
+
+.login-register a:hover {
+color:#b03f49;
+}
+
+.times-row {
+  height: 100%;
+  min-height: 50px;
+  margin-top: 50px;
+}
+
+.foodora-logo-row {
+  margin-top: 1em;
+  justify-content: center;
+}
+
+.header-content-row {
+  margin: auto;
+}
+
+.top-times-col {
+  top: 15px;
+}
+
+.times-color {
+  color: ;
+}
+
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
 /*
 
 ----------------END HEADER-------------------
@@ -135,12 +245,12 @@ body {
   padding: 120px 0 25px 0;
 }
 
-.custom-row{
- transition: all .2s ease-in-out;
+.custom-row {
+  transition: all 0.2s ease-in-out;
 }
 
 .custom-row:hover {
-transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .cat-burger {
@@ -165,7 +275,7 @@ transform: scale(1.2);
   height: 30px;
   width: 100%;
   max-width: 206px;
-    padding: 27px 26px 0 23px;
+  padding: 27px 26px 0 23px;
 }
 
 .burger-description {
@@ -181,22 +291,19 @@ transform: scale(1.2);
 */
 
 @media only screen and (max-width: 575px) {
-
   .w-50 {
     width: 100% !important;
   }
 
   .burger-description {
     padding: 0 0 2em 0;
-}
+  }
 
-.custom-modal-head {
+  .custom-modal-head {
     padding: 10px 0 10px 0;
-
+  }
 }
 @media only screen and (max-width: 420px) {
-
-
   .cat-burger h1 {
     font-size: 2.5em;
     padding-top: 13px;
@@ -210,7 +317,6 @@ transform: scale(1.2);
     padding: 24px 0 0 0;
   }
 }
-
 
 /*
 
