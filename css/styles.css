@@ -16,6 +16,7 @@ h2 {
 li {
   font-family: "Bebas Neue";
   color: #72151d;
+  font-size: 22px;
 }
 h1,
 h2,
@@ -49,15 +50,27 @@ p {
   color: #fff;
 }
 
+.custom-footer h6 {
+  font-family: "Bebas Neue";
+  color: #72151d;
+  font-size: 22px;
+}
+
+.custom-footer a,
+.custom-footer td {
+  color: #72151d;
+  font-family: "Lato";
+  font-size: 11px;
+}
+
 /*
 
 ------ END TEXT STYLES ------
 
 */
 
-body {
+html {
   height: 100%;
-  width: 100%;
 }
 
 /*
@@ -80,6 +93,7 @@ body {
 
 .header-space {
   max-height: 55px;
+  background-color: #fff;
 }
 
 .head-space-ul {
@@ -182,22 +196,26 @@ body {
 */
 
 .burger-menu {
-  display: inline-block;
+  display: none;
   width: 18px;
-  height: 18px;
+  height: 51px;
   cursor: pointer;
   text-decoration: none;
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  z-index: 999;
 }
 .burger-menu i {
   position: relative;
   display: inline-block;
   width: 18px;
   height: 3px;
-  color: #252525;
+  color: #b03f49;
   font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #b03f49;
   transition: all 0.2s ease-out;
 }
 .burger-menu i::before,
@@ -205,7 +223,7 @@ body {
   content: "";
   width: 18px;
   height: 3px;
-  background: #252525;
+  background: #b03f49;
   position: absolute;
   left: 0;
   transition: all 0.2s ease-out;
@@ -220,14 +238,7 @@ body {
   width: 30%;
 }
 .burger-menu.active i {
-  background: #fff;
-}
-
-.burger-menu {
-  position: sticky;
-  left: 2em;
-  top: 1em;
-  display: none;
+  background: #b03f49;
 }
 
 .sidenav {
@@ -241,6 +252,8 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  outline-offset: -8px;
+  outline: 2px solid #fff;
 }
 
 .sidenav a {
@@ -280,9 +293,9 @@ body {
 ---- CONTENT -----
 */
 .content-holder {
-  min-height: 140vh;
+  height: 100vh;
 }
-.bg-cover {
+body {
   background: url("../img/burgerlove-background.jpg") no-repeat center center
     fixed;
   -webkit-background-size: cover;
@@ -297,8 +310,9 @@ body {
   outline: 2px solid white;
   outline-offset: -12px;
   margin: 0 auto;
-  position: relative;
-  top: 6em;
+  position: sticky;
+  top: 4em;
+  margin-top: 5em;
 }
 
 .burger-pic {
@@ -358,6 +372,65 @@ body {
 */
 
 /*
+
+-----FOOOTER-----
+
+*/
+
+.custom-footer {
+  height: 120px;
+  background-color: #fff;
+  z-index: 999;
+  position: sticky;
+  max-width: 100%;
+}
+
+.footer-row {
+  justify-content: start;
+  padding: 0.5em;
+}
+
+.footer-time {
+  padding-left: 26px;
+}
+
+.footer-visit {
+  position: relative;
+  left: -15px;
+}
+
+.red-box {
+  background-color: #72151d;
+  width: 63px;
+  height: auto;
+  outline: 1px solid white;
+  outline-offset: -6px;
+}
+.custom-face-logo {
+  font-size: 32px;
+  padding: 12px 0px 12px 20px;
+  color: #fff;
+}
+
+.custom-insta-logo {
+  font-size: 32px;
+  padding: 12px 0px 12px 18px;
+  color: #fff;
+}
+
+.logo-row {
+  position: absolute;
+  right: 11em;
+}
+
+
+/*
+
+-----END FOOTER----
+
+*/
+
+/*
 ------ MEDIA QUERIES-----
 */
 
@@ -367,11 +440,42 @@ body {
   }
 
   .burger-menu {
-    display: block;
+    display: inline-block;
   }
 
   .burgerlove-logo {
     left: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+
+    .container-footer {
+      max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .custom-modal-head {
+    padding-top: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+  .custom-footer {
+    height: 280px;
+  }
+
+  .logo-row {
+    top: 10em;
+    left: 1em;
+    right: unset;
+  }
+
+  .times-footer-row,
+  .custom-visit-us {
+    max-width: 50%;
   }
 }
 
@@ -387,6 +491,12 @@ body {
   .custom-modal-head {
     padding: 10px 0 10px 0;
   }
+
+  .head-space-ul {
+    position: absolute;
+    top: -92px;
+    right: 12px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .cat-burger h1 {
@@ -400,6 +510,10 @@ body {
 
   .right-lines {
     padding: 24px 0 0 0;
+  }
+
+  .head-space-ul li {
+    font-size: 16px;
   }
 }
 
