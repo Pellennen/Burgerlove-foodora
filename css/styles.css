@@ -423,7 +423,6 @@ body {
   right: 11em;
 }
 
-
 /*
 
 -----END FOOTER----
@@ -449,17 +448,15 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
-
-    .container-footer {
-      max-width: 100%;
-    }
+  .container-footer {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .custom-modal-head {
     padding-top: 40px;
   }
-
 }
 
 @media only screen and (max-width: 660px) {
